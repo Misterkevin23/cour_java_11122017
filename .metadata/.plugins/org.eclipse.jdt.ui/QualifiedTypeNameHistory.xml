@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="fr.aston.exo.Personne"/>
 <fullyQualifiedTypeName name="fr.dessin.Point2D"/>
+<fullyQualifiedTypeName name="fr.aston.exo.Secretaire"/>
+<fullyQualifiedTypeName name="fr.dessin.Point3D"/>
+<fullyQualifiedTypeName name="fr.aston.exo.Personne"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

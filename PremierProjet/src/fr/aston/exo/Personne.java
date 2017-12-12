@@ -6,7 +6,22 @@ public class Personne {
 	private String nom;
 	private double poids;
 	private double taille;
-
+	
+	public static int nbBras = 2;
+	
+	public final static double TVA_IC = 20D;
+	
+	//constructeurs
+	public Personne() {
+		this(-1, "?");
+	}
+	
+	
+	public Personne(int unAge, String unNom) {
+		setAge(unAge);
+		setNom(unNom); 
+	}
+	
 	//Methodes
 	public void marcher(int nbPas, float vitesse) {
 		
@@ -15,6 +30,7 @@ public class Personne {
 	public String dormir (boolean estReve) {
 		return null;
 	}
+	
 
 	public String getNom() {
 		return nom;

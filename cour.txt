@@ -1,6 +1,7 @@
 Renaud FERRET
 renaud91@gmail.com
 
+*****************************************INSTALATION*****************************************
 
 *Ajout d'une variable d'enrivonnement dans la variable systyme pour pouvoir compiler du JAVA
 	nom:JAVA_HOME
@@ -29,7 +30,7 @@ Ajouter en debut de pah "%JAVA_HOME%\bin;"
 ->PERSPECTIVE EST UN ASSEMBLAGE DE VUE
 ->en java 
 	-class = fichier (majuscule)
-	-package = dossier (minuscule) ->pour cree des sous-dossier : separé par un .
+	-package = dossier (minuscule) ->pour cree des sous-dossier : separé par un . (arborescence de dossier)
 	-La compilation se fais a l'enregistrement
 	-"Ctrl" espace permet l'autocompleton de methode et class
 	-"F3" permet de naviger dans le code
@@ -51,8 +52,19 @@ Ajouter en debut de pah "%JAVA_HOME%\bin;"
 
 	-Installation de plugging ->help ->Eclipse Marketplace
 	-generation de getter et setteur -> click gauche -> source
+	-pour deplacer une class d'un package a un autre le plus paratique est d'utiliser(click gauche) -> Refactor -> move
+			->eclipse va readapter le code en fonction du déplacement dans tout les fichier du projet
+	-Les import sont faites automatiquement lorsque on utilise "Ctrl"+espace
+	-Pour generer un constructeur "source" -> "generate constructor using Fields" ( la method "super()" permet d'heriter de la class parent)
+	-pour regenerer un constructeur d'un parent "source" ->  "generate constructor from SuperClass"
+	-pour copier une methode d'un parent "source" -> "Override/Implement Methods"
+	-L'anotation Override signifie que la meme methode existe chez le parent ( même nombre de parametre, si nbre paramettre different -> methode differant)
+	-On peut homogeneiser le code lors de la sauvegarde en allant dans window -> Preference -> save action ( a chaque fois quqe l'on sauvegarde)
+			->parametrage de differentes regle ( aide pour avoir un code propre)
+	
 
 ****************************JAVA****************************************************
+
 Type primitif:
 Entier:
 -long
@@ -67,4 +79,32 @@ boolean
 charactere
 -char 
 
+-Java utilise le camelCase
 -Un attribut est toujour initialisé a 0 alors qu'un parametre n'est jamais initialisé
+- un import permet de localiser la class precisement ( nom long) afin d'évité les ambiguité lors de l'appelle de la class par le nom court
+- l' instance est un object a qui on a atribuer une valeur
+-Un constructeur ne retourne rien (meme pas void) et porte le nom de la class
+-Le chainage de constructeur est lorsque qu'un constructeur "bete"(sans parametre) appelle un constructeur "intelligent" ( avec parametre).
+- Pour appeller un constructeur dans une class (pour le chainage) on utilise "this(a,b)" avec a et b les paramettre du constructeur inteligent
+
+-le mot clef "final" correspond à une constante
+-le mot clef "static" est possible sur des methode, des class mais pas sur des variable. Elle est global a la class et non a la l'instance.
+	Du coup si l'element est changer pour une instance, elle est changer pour toute les instance de la classe
+	Une methode "static" n'utilise que des element "static" 
+	Le "static" est tres rare. A utiliser avec parcimonie
+
+-Il n'y a pas d'heritage de constructeur chez les enfants
+	la methode "super permet de faire hérité les parametre des parent
+-Pour appeller une methode d'un parent dans une class fille, on utilise super."nom de la methode"
+
+-Le polymorphisme permet de transformer des object en object plus petit.
+
+-Toute les class ont acces a la methode "toString"
+-"getClass" methode permet de retournée la class d'un object
+-un tableau doit avoir une taille et est un object
+-Les boucle sont les même que en js pour "for, "while" et "do while".
+-Pour le forEach, c'est une bouche for particulier. On ne sais pas sur quel index on est. Du coup il se base sur les valeurs. 
+On peut nommé nos boucle afin de casser une boucle particuliere (break) ou continuer (continue) une boucle particulière 
+-Les "if" , "else" ou "else if" on la meme structure que PHP
+-Les switch fonctionne commme dans PHP . En abscence de break, si la condition est vrai, le switch continue a executer toute les ligne jusqu'a rencontrer un Breack ou la fin d'accolade du switch meme si les autre case sont faux.
+	Ceci est valable dans tous les language 

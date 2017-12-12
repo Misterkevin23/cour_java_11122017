@@ -1,0 +1,15 @@
+package fr.aston.exo;
+
+public class Run {
+
+	public static void main(String[] args) {
+		Personne p1 = new Personne(25, "Jhon");
+		System.out.println("Age de la personne:" + p1.getAge());
+		System.out.println(Personne.nbBras);
+		
+		Personne p2 = new Personne(45, "Alfon");
+		Personne.nbBras = 4;
+		System.out.println(Personne.nbBras);
+	}
+
+}
