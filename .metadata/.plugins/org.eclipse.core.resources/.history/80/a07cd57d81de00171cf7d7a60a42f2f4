@@ -1,0 +1,18 @@
+package fr.aston.exo;
+
+public class Personne {
+	//Attibuts
+	private int age;
+	private String nom;
+	private double poids;
+	private double taille;
+
+	//Methodes
+	public void marcher(int nbPas, float vitesse) {
+		
+	}
+	
+	public String dormir (boolean estReve) {
+		return null;
+	}
+}

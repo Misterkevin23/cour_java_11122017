@@ -1,0 +1,17 @@
+package fr.aston.exo;
+
+public class Bonjour {
+	
+	/**
+	 * Ceci est <strong>ma methode</strong>
+	 * 
+	 * @param args mes parametres de main
+	 */
+
+	public static void main(String[] args) {
+		
+		System.out.println("Bonjour tout le monde");
+
+	}
+
+}

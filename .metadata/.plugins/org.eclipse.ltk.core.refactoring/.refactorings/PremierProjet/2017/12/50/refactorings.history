@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;fr.aston.exo.Personne.nom&apos; in &apos;fr.aston.exo.Personne&apos;&#x0D;&#x0A;- Original project: &apos;PremierProjet&apos;&#x0D;&#x0A;- Original element: &apos;fr.aston.exo.Personne.nom&apos;&#x0D;&#x0A;- Getter method name: &apos;getNom&apos;&#x0D;&#x0A;- Setter method name: &apos;setNom&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;nom&apos;" flags="589830" getter="getNom" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;fr.aston.exo{Personne.java[Personne^nom" insertion="1" setter="setNom" stamp="1513003340156" version="1.0" visibility="1"/>
+</session>

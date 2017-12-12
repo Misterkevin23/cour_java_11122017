@@ -1,0 +1,70 @@
+Renaud FERRET
+renaud91@gmail.com
+
+
+*Ajout d'une variable d'enrivonnement dans la variable systyme pour pouvoir compiler du JAVA
+	nom:JAVA_HOME
+valeur: 'chemin où ce trouve le dossier JAVA (C:\Program Files\Java\jdk1.8.0_144)
+
+*Modifier la variable "Path" dans le variable systeme
+Ajouter en debut de pah "%JAVA_HOME%\bin;"
+
+*compiler un script java avec une invite commande
+-javac "nom du fichier" 
+		->Compilation du fichier 
+		-> creation d'un fichier binaire (nom du fichier avec l'extention ".class") 
+		->fichier executable sur n'importe quel support
+
+*Executer le script java avec une invite commande
+-java "nom de la classe"
+
+*Editeur spécialiser pour java Eclipse ou IntelliJ
+-Dezipper Eclipe dans C: car le chemin est important en JAVA
+-Eclipse existe aussi pour PHP, javascript ....
+
+** JAVA EE permet de faire des Application web
+
+*******************ECLIPSE************************************
+
+->PERSPECTIVE EST UN ASSEMBLAGE DE VUE
+->en java 
+	-class = fichier (majuscule)
+	-package = dossier (minuscule) ->pour cree des sous-dossier : separé par un .
+	-La compilation se fais a l'enregistrement
+	-"Ctrl" espace permet l'autocompleton de methode et class
+	-"F3" permet de naviger dans le code
+	- "Run as" permet d'executer le projet ( click droit sur la class .java)
+	-hover sur la methode ou fonction -> apparition de la doc (present initialement dans eclipse)
+	
+	-/**
+	 * Ceci est <strong>un commentaire</strong>
+	 * 
+	 * @param args mes parametres de main
+	 */
+	-->Java doc permet de documenter le code ( apparais lorsque hover sur la fonction)
+	
+	//--------------A VERIFIER AU DEBUT DE L'INSTALATION---------------------//
+	-verifier que JAVA pointe vers le compilateur (jre) ->preferences -> Java ->installed JREs  ---> un fichier jdk doit etre coché
+	-encodage du code en UTF-8 
+		->preference barre de recherche "enco" -> workspace -> changer Workspace, CSS, HTML et JSP en UTF8 
+	//---------------------------------------------------------------------//
+
+	-Installation de plugging ->help ->Eclipse Marketplace
+	-generation de getter et setteur -> click gauche -> source
+
+****************************JAVA****************************************************
+Type primitif:
+Entier:
+-long
+-int <-- default
+-short
+-byte
+Flotants
+-double <-- default (ex 5.5) nombre a virgule avec un nombre apres la virgule limité large
+-float nombre a virgule avec un nombre apres la virgule limité a 7
+boolean
+-boolan : true ou false
+charactere
+-char 
+
+-Un attribut est toujour initialisé a 0 alors qu'un parametre n'est jamais initialisé

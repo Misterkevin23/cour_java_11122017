@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;fr.dessin.Point2D&apos; to &apos;fr.dessin&apos;&#x0D;&#x0A;- Original project: &apos;Exo2&apos;&#x0D;&#x0A;- Original element: &apos;Exo2/src/fr.dessin.Point2D&apos;&#x0D;&#x0A;- Renamed element: &apos;Exo2/src/fr.dessin&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;fr.dessin.Point2D&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;fr.dessin.Point2D" name="fr.dessin" qualified="false" references="true" stamp="1513006023223" textual="false" version="1.0"/>
+</session>
