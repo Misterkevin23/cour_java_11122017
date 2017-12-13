@@ -5,7 +5,7 @@
 	<item value="887" key="clean_up_save_particpant_modify_dialog.preferred_width"/>
 	<item value="614" key="clean_up_save_particpant_modify_dialog.preferred_height"/>
 	<item value="4" key="clean_up_save_particpant_modify_dialog.last_focus"/>
-	<item value="0" key="org.eclipse.jdt.uiformatter_page.modify_dialog_tab_page.last_focus_index"/>
+	<item value="-1" key="org.eclipse.jdt.uiformatter_page.modify_dialog_tab_page.last_focus_index"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
@@ -47,7 +47,7 @@
 			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 			<item value="500" key="DIALOG_HEIGHT"/>
 			<item value="-29" key="DIALOG_X_ORIGIN"/>
-			<item value="-14" key="DIALOG_Y_ORIGIN"/>
+			<item value="-5" key="DIALOG_Y_ORIGIN"/>
 		</section>
 	</section>
 	<section name="NewClassWizardPage">
@@ -74,7 +74,7 @@
 		<item value="528" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="696" key="DIALOG_HEIGHT"/>
-		<item value="491" key="DIALOG_X_ORIGIN"/>
+		<item value="443" key="DIALOG_X_ORIGIN"/>
 		<item value="49" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
@@ -85,7 +85,7 @@
 		<item value="516" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="691" key="DIALOG_HEIGHT"/>
-		<item value="590" key="DIALOG_X_ORIGIN"/>
+		<item value="479" key="DIALOG_X_ORIGIN"/>
 		<item value="53" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="RefactoringWizard.preview">
@@ -114,7 +114,7 @@
 		<item value="519" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="627" key="DIALOG_HEIGHT"/>
-		<item value="589" key="DIALOG_X_ORIGIN"/>
+		<item value="476" key="DIALOG_X_ORIGIN"/>
 		<item value="95" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="quick_assist_proposal_size">

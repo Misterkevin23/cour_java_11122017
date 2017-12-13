@@ -6,4 +6,7 @@
 <fullyQualifiedTypeName name="fr.dessin.Point3D"/>
 <fullyQualifiedTypeName name="fr.aston.exo.Personne"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="fr.banque.Client"/>
+<fullyQualifiedTypeName name="javax.swing.GroupLayout.SequentialGroup"/>
+<fullyQualifiedTypeName name="fr.banque.Compte"/>
 </qualifiedTypeNameHistroy>

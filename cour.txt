@@ -1,6 +1,8 @@
 Renaud FERRET
 renaud91@gmail.com
 
+tuto en ligne Alphorm;
+
 *****************************************INSTALATION*****************************************
 
 *Ajout d'une variable d'enrivonnement dans la variable systyme pour pouvoir compiler du JAVA
@@ -61,6 +63,30 @@ Ajouter en debut de pah "%JAVA_HOME%\bin;"
 	-L'anotation Override signifie que la meme methode existe chez le parent ( même nombre de parametre, si nbre paramettre different -> methode differant)
 	-On peut homogeneiser le code lors de la sauvegarde en allant dans window -> Preference -> save action ( a chaque fois quqe l'on sauvegarde)
 			->parametrage de differentes regle ( aide pour avoir un code propre)
+
+	//-------------------------------------------MAVEN-----------------------------//
+	-MAVEN --> outil de build -> crée automatiquement un livrabre (le projet dans sa solution final)
+		-->permet de gérer des dependances -> les library exterieur
+		--> faire des rapport sur different test
+
+	-Crée un project MAVEN : file -> new -> project... -> chercher maven -> choisir -> maven project -> create a single project
+	-ActefactID correspond au nom du package -> on travail dans les dossier src les autre dossier sont des dossier du systeme
+		-le dossier ressources est pour tous se qui n'est pas du code
+		- les dossier test servent a faire des test unitaire
+		- les fichier class java vont dans le dossier main/java
+	-Par default on est en java 5. Il faut donc modifier le fichier xml ( pom.xml)
+			project.build.sourceEncoding: encodage du script
+			jdk.source : ecriture du code (en java 7)
+			jdk.target : execution du code
+			ATTENTION: Des que l'on touche le fichier pom il faut mettre a jour le projet marven
+				->click droit -> Maven -> Update Projet 
+		Equivalent: fichier pom.xml correspond a app.module , Maven correspond a npm, 
+
+	//----------------------------------------------------------------------------------//
+	-pour utiliser le mode debug:
+		->double clicker sur le numeros de la ligne pour crée des point d'arret
+		-> lancer le code en mode debug ( insecte vert)
+			-icone "j!" permet de crée des breackpoint d'exception. lors que le script plante, il met des point d'arret automatiquement
 	
 
 ****************************JAVA****************************************************
@@ -101,10 +127,12 @@ charactere
 
 -Toute les class ont acces a la methode "toString"
 -"getClass" methode permet de retournée la class d'un object
--un tableau doit avoir une taille et est un object
+-un tableau doit avoir une taille et est un cosidéré comme un object
 -Les boucle sont les même que en js pour "for, "while" et "do while".
 -Pour le forEach, c'est une bouche for particulier. On ne sais pas sur quel index on est. Du coup il se base sur les valeurs. 
 On peut nommé nos boucle afin de casser une boucle particuliere (break) ou continuer (continue) une boucle particulière 
--Les "if" , "else" ou "else if" on la meme structure que PHP
+-Les "if" , "else" ou "else if" on la meme structure que js
 -Les switch fonctionne commme dans PHP . En abscence de break, si la condition est vrai, le switch continue a executer toute les ligne jusqu'a rencontrer un Breack ou la fin d'accolade du switch meme si les autre case sont faux.
 	Ceci est valable dans tous les language 
+
+
