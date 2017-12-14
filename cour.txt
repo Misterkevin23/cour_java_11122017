@@ -134,5 +134,6 @@ On peut nommé nos boucle afin de casser une boucle particuliere (break) ou conti
 -Les "if" , "else" ou "else if" on la meme structure que js
 -Les switch fonctionne commme dans PHP . En abscence de break, si la condition est vrai, le switch continue a executer toute les ligne jusqu'a rencontrer un Breack ou la fin d'accolade du switch meme si les autre case sont faux.
 	Ceci est valable dans tous les language 
-
+-l'interface sert a decrire la class. C'est la class qui va implementer le code
+-l'interface permet de faire du multi heritage
 

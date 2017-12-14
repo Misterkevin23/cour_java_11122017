@@ -1,11 +1,11 @@
 package fr.banque;
 
-public class CompteRemunere extends Compte {
+public class CompteRemunere extends Compte implements ICompteRemunere {
 
 	private double taux;
 
 	public CompteRemunere() {
-		this(-1, -1, -1D);
+		this(-1, -1, 0.007D);
 	}
 
 	public CompteRemunere(double solde, int numero, double taux) {
@@ -13,23 +13,37 @@ public class CompteRemunere extends Compte {
 		this.setTaux(taux);
 	}
 
+	@Override
 	public double getTaux() {
 		return this.taux;
 	}
 
+	@Override
 	public void setTaux(double taux) {
-		this.taux = taux;
+		if (taux > 0 && taux < 1) {
+			this.taux = taux;
+		} else {
+			System.out.println("Veuillez entrer un pourcentage");
+		}
 	}
 
 	@Override
 	public String toString() {
-		return this.getClass().getSimpleName() + "[taux=" + this.getTaux() + "]";
+		String s = super.toString();
+		s = s.substring(0, s.length() - 1); // Pour retirer le ']' en fin de chaine
+		return s + " taux= " + this.getTaux() + "]";
+		// return this.getClass().getSimpleName() + "[solde= " + this.getSolde() + ",
+		// numero= " + this.getNumero() + "taux= " + this.getTaux() + "]";
 	}
 
+	@Override
 	public double calculerInterets() {
 		return this.getTaux() * super.getSolde();
+		// double resultat = this.getTaux() * super.getSolde();
+		// return resultat;
 	}
 
+	@Override
 	public void verserInterets() {
 		super.ajouter(this.calculerInterets());
 	}

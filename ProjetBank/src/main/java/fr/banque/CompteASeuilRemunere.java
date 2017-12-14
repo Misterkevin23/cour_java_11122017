@@ -1,15 +1,15 @@
 package fr.banque;
 
-public class CompteASeuil extends Compte implements ICompteASeuil {
+public class CompteASeuilRemunere extends CompteRemunere implements ICompteASeuil {
 
 	private double seuil;
 
-	public CompteASeuil() {
-		this(-1D, -1, -1D);
+	public CompteASeuilRemunere() {
+		this(-1D, -1, 0.007D, -1D);
 	}
 
-	public CompteASeuil(double solde, int numero, double seuil) {
-		super(solde, numero);
+	public CompteASeuilRemunere(double solde, int numero, double taux, double seuil) {
+		super(solde, numero, taux);
 		this.setSeuil(seuil);
 	}
 
@@ -27,7 +27,7 @@ public class CompteASeuil extends Compte implements ICompteASeuil {
 	public String toString() {
 		String s = super.toString();
 		s = s.substring(0, s.length() - 1); // Pour retirer le ']' en fin de chaine
-		return this.getClass().getSimpleName() + s + " seuil= " + this.getSeuil() + "]";
+		return s + " seuil= " + this.getSeuil() + "]";
 		// return this.getClass().getSimpleName() + "[solde= " + this.getSolde() + ",
 		// numero= " + this.getNumero() + " seuil= " + this.getSeuil() + "]";
 	}
@@ -36,10 +36,10 @@ public class CompteASeuil extends Compte implements ICompteASeuil {
 	public void retirer(double uneValeur) {
 		if (this.getSolde() - uneValeur > this.getSeuil()) {
 			super.retirer(uneValeur);
-		}
-		else {
+		} else {
 			System.out.println("Seuil maximal !!!, on ne fait rien");
 		}
 	}
+
 
 }

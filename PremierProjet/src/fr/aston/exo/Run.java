@@ -4,13 +4,16 @@ public class Run {
 
 	public static void main(String[] args) {
 		Personne p1 = new Personne(25, "Jhon");
+		Object p4 = new Personne(25, "Rob");
+		IMonInterface p5 = new Personne(26, "tony");
+
 		System.out.println("Age de la personne:" + p1.getAge());
 		System.out.println("Nombre de bras: " + Personne.nbBras);
-		
+
 		Personne p2 = new Personne(45, "Alfon");
 		Personne.nbBras = 4;
 		System.out.println("Mutant:" + Personne.nbBras);
-		
+
 		Secretaire s = new Secretaire();
 	}
 

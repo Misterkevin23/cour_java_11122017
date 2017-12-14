@@ -2,11 +2,21 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="fr.dessin.Point2D"/>
-<fullyQualifiedTypeName name="fr.aston.exo.Secretaire"/>
 <fullyQualifiedTypeName name="fr.dessin.Point3D"/>
-<fullyQualifiedTypeName name="fr.aston.exo.Personne"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="fr.banque.Client"/>
 <fullyQualifiedTypeName name="javax.swing.GroupLayout.SequentialGroup"/>
+<fullyQualifiedTypeName name="fr.banque.CompteRemunere"/>
 <fullyQualifiedTypeName name="fr.banque.Compte"/>
+<fullyQualifiedTypeName name="fr.aston.exo.IMonInterface"/>
+<fullyQualifiedTypeName name="fr.banque.ICompteRemunere"/>
+<fullyQualifiedTypeName name="fr.banque.ICompteASeuil"/>
+<fullyQualifiedTypeName name="fr.banque.CompteASeuilRemunere"/>
+<fullyQualifiedTypeName name="fr.banque.CompteASeuil"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="fr.aston.exo.Personne"/>
+<fullyQualifiedTypeName name="fr.aston.exo.Secretaire"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>
