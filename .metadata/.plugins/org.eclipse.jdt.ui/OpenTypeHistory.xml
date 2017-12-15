@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=PremierProjet/src&lt;fr.aston.exo{Personne.java[Personne" modifiers="1" timestamp="1513076957035"/>
+<typeInfo handle="=PremierProjet/src&lt;fr.aston.exo{Personne.java[Personne" modifiers="1" timestamp="1513330514926"/>
 <typeInfo handle="=Exo2/src&lt;fr.dessin{Point2D.java[Point2D" modifiers="1" timestamp="1513093709224"/>
-<typeInfo handle="=ProjetBank/src\/main\/java&lt;fr.banque{Compte.java[Compte" modifiers="1" timestamp="1513174434575"/>
-<typeInfo handle="=ProjetBank/src\/main\/java&lt;fr.banque{CompteRemunere.java[CompteRemunere" modifiers="1" timestamp="1513256856438"/>
+<typeInfo handle="=ProjetBank/src\/main\/java&lt;fr.banque{Compte.java[Compte" modifiers="1" timestamp="1513333661322"/>
+<typeInfo handle="=ProjetBank/src\/main\/java&lt;fr.banque{CompteRemunere.java[CompteRemunere" modifiers="1" timestamp="1513260359346"/>
+<typeInfo handle="=ProjetBank/C:\/Program Files\/Java\/jdk1.8.0_144\/jre\/lib\/rt.jar&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1512985248339"/>
 </typeInfoHistroy>

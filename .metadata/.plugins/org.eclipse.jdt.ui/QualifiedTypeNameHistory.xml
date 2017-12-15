@@ -7,7 +7,6 @@
 <fullyQualifiedTypeName name="fr.banque.Client"/>
 <fullyQualifiedTypeName name="javax.swing.GroupLayout.SequentialGroup"/>
 <fullyQualifiedTypeName name="fr.banque.CompteRemunere"/>
-<fullyQualifiedTypeName name="fr.banque.Compte"/>
 <fullyQualifiedTypeName name="fr.aston.exo.IMonInterface"/>
 <fullyQualifiedTypeName name="fr.banque.ICompteRemunere"/>
 <fullyQualifiedTypeName name="fr.banque.ICompteASeuil"/>
@@ -19,4 +18,13 @@
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="fr.aston.exo.ExampleException"/>
+<fullyQualifiedTypeName name="fr.banque.BanqueException"/>
+<fullyQualifiedTypeName name="fr.banque.Compte"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="javax.naming.ConfigurationException"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>
