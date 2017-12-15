@@ -33,11 +33,12 @@ public class CompteASeuilRemunere extends CompteRemunere implements ICompteASeui
 	}
 
 	@Override
-	public void retirer(double uneValeur) {
+	public void retirer(double uneValeur) throws BanqueException {
 		if (this.getSolde() - uneValeur > this.getSeuil()) {
 			super.retirer(uneValeur);
 		} else {
-			System.out.println("Seuil maximal !!!, on ne fait rien");
+			BanqueException be = new BanqueException("Seuil maximal !!!, on ne fait rien");
+			throw be;
 		}
 	}
 

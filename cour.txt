@@ -87,7 +87,11 @@ Ajouter en debut de pah "%JAVA_HOME%\bin;"
 		->double clicker sur le numeros de la ligne pour crée des point d'arret
 		-> lancer le code en mode debug ( insecte vert)
 			-icone "j!" permet de crée des breackpoint d'exception. lors que le script plante, il met des point d'arret automatiquement
-	
+	//-------------------------------------------------------------------------------------//
+	-Les exception sont des class généreralement nommée avec "Exception" qui hérite de la class "Exception"
+		->il sufffit apres de generer les constructeur via la superClass
+		->pour generé les try/catch selection des ligne -> (click droit) ->surround with -> try/catch block
+
 
 ****************************JAVA****************************************************
 
@@ -136,4 +140,50 @@ On peut nommé nos boucle afin de casser une boucle particuliere (break) ou conti
 	Ceci est valable dans tous les language 
 -l'interface sert a decrire la class. C'est la class qui va implementer le code
 -l'interface permet de faire du multi heritage
++Classse Abstraite
+	-une classe normale avec le mot clef abstract
+	-Peut (comme toutes classes)
+		-avoir des attributs
+		-avoir des constructeurs
+		-avoir des méthodes normales /stactic
+	-Peut spécifiquement
+		-avoir des méthodes abstraites
+	-on peut pas l'instancier (faire un new) (*)
+
++Interface
+	-C'est pas une classe
+	-que des méthodes abstraites (ou default en J8)
+	-que du public (ou private J9)
+	des attributs final static (constantes globales)
+	-on peut pas l'instancier (faire un new) (*)
+
++Exceptions (p262 du cour)
+-Existe en Javascript
+-Permet de le lancé un object message en car d'erreur de la methode
+-Signal que cette methode peut potencielement avoir une erreur (
+	mot clef -> throws : avec un s (it throws)
+			-Uniquement sur les prototypages de méthode
+			-Indique que la methode est succeptible de renvoyer un message d'erreur
+			public void faireBBQ() throws "class Exception"
+		-> throw : sans s (T throw)
+			-Uniquement dans le code des méthodes
+			- Permet de faire "voyager" le message d'erreur
+			--> public void faireBBQ(){
+				throw new MonException("bla bla")
+			}
+			-casse la méthode	
+		-> try/catch/finally permet de recupérer l'erreur
+			...
+			...
+			try{			si la première instruction est declancher on va directeemnt dans le catch où on gère le probleme mais l'instr3 ne sera pas lue
+				//instr1
+				faireBBQ();
+				//instr3
+			} catch (MonException unNomDeVariable) {
+				unNomDeVariable.printStacktrace();
+				//afficher un log
+			} finally { //quoi qu'il arrive. On le retoruve souvant lorsque l'on gère des flux de connexion
+			
+			}	
+
 

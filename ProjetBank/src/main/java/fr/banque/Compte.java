@@ -39,7 +39,7 @@ public class Compte {
 		return this.getClass().getSimpleName() + " [solde=" + this.getSolde() + ", numero=" + this.getNumero() + "]";
 	}
 
-	public void retirer(double unMontant) {
+	public void retirer(double unMontant) throws BanqueException {
 		this.setSolde(this.getSolde() - unMontant);
 	}
 

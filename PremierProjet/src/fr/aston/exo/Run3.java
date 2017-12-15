@@ -3,7 +3,6 @@ package fr.aston.exo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Run3 {
 
@@ -44,21 +43,22 @@ public class Run3 {
 		// Une map ne conserve pas l'ordre
 		// Un map permet de ranger les valeur en mode clef serrure
 		// Si une clef et utilisé pour plusieurs valeur seul la dernière est utilisé
-		java.util.Map<String, Personne> maMap = new HashMap<>();
-		maMap.put(1, new Personne(1, "gg"));
-		maMap.put("g", new Personne(1, "tt"));
-		maMap.put(1, new Personne(2, "hh"));
+		java.util.Map<String, Personne> maMap = new HashMap<>(); // ATTENTION p302 du cour c'est a partir de java 7 que
+		// l"on est pas obligé de mettre le typage des
+		// maMap.put(1, new Personne(1, "gg"));
+		// maMap.put("g", new Personne(1, "tt"));
+		// maMap.put(2, new Personne(2, "hh"));
 
 		// recherche d'apres une Valeurs
-		for (String uneP : maMap.values()) {
-			System.out.println(uneP);
-		}
+		// for (String uneP : maMap.values()) {
+		// System.out.println(uneP);
+		// }
 
 		// recherche d'apres une key valeur
-		for (Map<K, V>.Entry<String, Personne> uneEntree : maMap.entrySet()) {
-			System.out.println(uneEntree.getKey());
-			System.out.println(uneEntree.getValue());
-		}
+		// for (Map<K, V>.Entry<String, Personne> uneEntree : maMap.entrySet()) {
+		// System.out.println(uneEntree.getKey());
+		// System.out.println(uneEntree.getValue());
+		// }
 	}
 
 }

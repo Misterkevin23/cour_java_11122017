@@ -1,5 +1,6 @@
 package fr;
 
+import fr.banque.BanqueException;
 import fr.banque.Client;
 import fr.banque.Compte;
 import fr.banque.CompteASeuil;
@@ -16,20 +17,30 @@ public class Run {
 		Compte compte4 = new CompteASeuil(13000, 3, 200);
 		Compte compte5 = new CompteRemunere(73230, 32, 0.2);
 
-		client.ajouterCompte(compte1);
-		client.ajouterCompte(compte2);
-		client.ajouterCompte(compte3);
-		client.ajouterCompte(compte4);
-		client.ajouterCompte(compte5);
+		try {
+			client.ajouterCompte(compte1);
+			client.ajouterCompte(compte2);
+			client.ajouterCompte(compte3);
+			client.ajouterCompte(compte4);
+			// client.ajouterCompte(compte5);
+		} catch (BanqueException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println(client);
 
 		compte1.ajouter(400);
-		compte2.retirer(3000);
-		compte3.retirer(10000);
+		try {
+			compte2.retirer(3000);
+			compte3.retirer(10000);
+		} catch (BanqueException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		compte4.ajouter(500);
 		System.out.println(client);
 
-		Compte[] tab = client.getTabCompte();
+		Compte[] tab = client.getListeCompte();
 
 		for (Compte uneCase : tab) {
 			if ("CompteRemunere".equals(uneCase.getClass().getSimpleName())) {
